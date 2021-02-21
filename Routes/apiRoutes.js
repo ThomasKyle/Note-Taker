@@ -1,7 +1,7 @@
 const fs = require('fs');
 const express = require('express');
 const router = express.Router();
-
+//routes get
 router.get('/api/notes', (req, res) => {
     fs.readFile('./db/db.json', (err, data) => {
         dbData = JSON.parse(data)
